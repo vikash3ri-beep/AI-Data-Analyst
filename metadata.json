@@ -1,0 +1,10 @@
+{
+  "name": "AskSQL — AI Data Analyst",
+  "description": "Mobile-first AI Data Analyst that converts plain English or Hinglish questions into SQL queries, executes them on real relational databases and uploaded CSVs, and generates interactive charts and executive insights.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
