@@ -21,7 +21,12 @@ export default defineConfig(() => {
           theme_color: '#0F5132',
           background_color: '#F6F8F7',
           display: 'standalone',
+          display_override: ['standalone', 'minimal-ui'],
           orientation: 'portrait-primary',
+          dir: 'ltr',
+          lang: 'en',
+          categories: ['business', 'productivity', 'utilities'],
+          prefer_related_applications: false,
           start_url: '/',
           scope: '/',
           icons: [

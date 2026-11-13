@@ -482,6 +482,10 @@ async function startServer() {
     res.json({ ok: true });
   });
 
+  app.get('/manifest.json', (_req, res) => {
+    res.redirect(301, '/manifest.webmanifest');
+  });
+
   app.get('/api/schema', (_req, res) => {
     try {
       const schema = getSchemaOverview();

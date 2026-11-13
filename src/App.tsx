@@ -3,7 +3,7 @@ import {
   Sparkles,
   Database,
   History,
-  Smartphone,
+  BookOpen,
   Send,
   Mic,
   MicOff,
@@ -323,7 +323,7 @@ export default function App() {
     { id: 'analyze', label: 'Analyze', icon: Sparkles },
     { id: 'tables', label: 'Tables', icon: Database },
     { id: 'history', label: 'History', icon: History },
-    { id: 'mobile', label: 'Phone App', icon: Smartphone },
+    { id: 'guide', label: 'Guide', icon: BookOpen },
   ];
 
   return (
@@ -387,7 +387,7 @@ export default function App() {
         </div>
 
         <div className="pt-4 border-t border-emerald-950/8 space-y-3">
-          <PWAInstallButton onOpenMobileGuide={() => setActiveTab('mobile')} />
+          <PWAInstallButton />
         </div>
       </aside>
 
@@ -404,7 +404,7 @@ export default function App() {
               <span>Offline</span>
             </span>
           )}
-          <PWAInstallButton compact onOpenMobileGuide={() => setActiveTab('mobile')} />
+          <PWAInstallButton compact />
         </div>
       </header>
 
@@ -631,7 +631,7 @@ export default function App() {
             />
           )}
 
-          {activeTab === 'mobile' && <MobileAppGuide />}
+          {activeTab === 'guide' && <MobileAppGuide onTryQuestion={(q) => runAnalysis(q)} />}
         </div>
       </main>
 

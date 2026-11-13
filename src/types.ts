@@ -1,6 +1,6 @@
 export type ChartType = 'bar' | 'line' | 'donut' | 'table' | 'kpi';
 
-export type NavTab = 'analyze' | 'tables' | 'history' | 'mobile';
+export type NavTab = 'analyze' | 'tables' | 'history' | 'guide';
 
 export interface ColumnInfo {
   name: string;

@@ -352,7 +352,7 @@ export const SchemaExplorer: React.FC<SchemaExplorerProps> = ({
         <div>
           <h2 className="text-xl font-bold text-[#111827]">Database Tables</h2>
           <p className="text-sm text-slate-500 mt-0.5">
-            Inspect live SQLite tables or upload any CSV from your phone to analyze it with AI.
+            Inspect live SQLite tables or upload any CSV file to analyze it instantly with AI.
           </p>
         </div>
 
