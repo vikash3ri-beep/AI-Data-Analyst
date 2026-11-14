@@ -1,0 +1,14 @@
+{
+  "appId": "com.antigravity.asksql",
+  "appName": "AskSQL",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "backgroundColor": "#0F5132",
+    "allowMixedContent": true
+  }
+}

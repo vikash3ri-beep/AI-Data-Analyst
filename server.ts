@@ -319,7 +319,7 @@ async function generateSqlPlan(
   schema: TableSchemaInfo[],
   previousError?: { sql: string; error: string },
   previousContext?: { question: string; sql: string },
-  modelName: 'gemini-4-hydrogen' | 'gemini-3.1-flash-lite' = 'gemini-4-hydrogen'
+  modelName: string = 'gemini-3.8-flash'
 ) {
   const schemaText = schema
     .map((t) => {
@@ -714,7 +714,7 @@ function buildStatisticalInsight(
 
       const ai = getAiClient();
       const schema = getSchemaOverview();
-      let activeModel: 'gemini-4-hydrogen' | 'gemini-3.1-flash-lite' = 'gemini-4-hydrogen';
+      let activeModel: string = 'gemini-3.8-flash';
 
       let plan;
       try {
